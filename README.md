@@ -7,7 +7,6 @@
 ## Setup YACE
 
 - Run YACE: yace.sh
-- Teminal output
 
 ```bash
 {"level":"info","msg":"Parse config..","time":"2022-09-01T23:25:00Z"}
