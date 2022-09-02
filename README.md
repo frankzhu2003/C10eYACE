@@ -1,6 +1,8 @@
 # C10eYACE
 
-## Create AWS IAM User with yace-iam
+## Setup AWS
+
+Create AWS IAM User with yace-iam
 
 ## Setup YACE
 
