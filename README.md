@@ -58,7 +58,7 @@
 - Create the dashboard: c10eDashboard.json
 
 
-### Generate CPU traffic
+## Generate CPU traffic
 
 - Install stress-ng
 - Ru stress-ng at background: stress-ng.sh
