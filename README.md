@@ -16,7 +16,7 @@
 
 ## Setup C10e Collector
 
-- Install C10e Collector
+- Install C10e Collector: https://docs.chronosphere.io/documentation/admin/collector/standalone
 - Run C10e Collector: c10ecollector.sh
 
 ```bash
