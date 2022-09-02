@@ -61,5 +61,5 @@
 ## Generate CPU traffic
 
 - Install stress-ng
-- Run stress-ng at background: stress-ng.sh
+- Run stress-ng in background: stress-ng.sh
 
