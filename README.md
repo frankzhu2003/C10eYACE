@@ -20,7 +20,6 @@
 - Run C10e Collector: c10ecollector.sh
 
 ```bash
-[ec2-user@ip-172-31-28-165 c10e]$ head -50 nohup.out 
 2022/09/02 02:29:14 Go Runtime version: go1.18
 2022/09/02 02:29:14 Build Version:      v0.92.0-d206c18e
 2022/09/02 02:29:14 Build Revision:     d206c18e
@@ -50,7 +49,6 @@
 {"level":"info","ts":1662085756.4327319,"msg":"updating dynamic configuration","report_info":{"updatedConfig":"legacy_metric_push_timeout:45 metric_push_timeout:<seconds:45 > sendMetricsType:true enable_open_metrics_support:true compression_format:SNAPPY max_pod_augmentation_age:2 "}}
 {"level":"info","ts":1662085760.293371,"msg":"adding new scrape target","targetSetName":"self_scrape","targetHash":12540464998599900356,"targetLabels":"{instance=\"ip-172-31-28-165.ec2.internal\", job=\"self_scrape\", subdomain=\"demo-sandbox\"}","targetUrl":"http://0.0.0.0:3030/metrics-extended"}
 {"level":"info","ts":1662085760.3527994,"msg":"adding new scrape target","targetSetName":"c10esap2022cloudwatch_exporter","targetHash":15981339231895640100,"targetLabels":"{instance=\"localhost:5000\", job=\"c10esap2022cloudwatch_exporter\", team=\"c10esap2022\"}","targetUrl":"http://localhost:5000/metrics"}
-{"level":"info","ts":1662085764.9242845
 ```
 
 ## Setup C10e Dashboard
