@@ -17,7 +17,7 @@
   "gnetId": 617,
   "graphTooltip": 0,
   "id": 35,
-  "iteration": 1662129559694,
+  "iteration": 1662159122849,
   "links": [],
   "panels": [
     {
@@ -36,7 +36,7 @@
       "fillGradient": 0,
       "grid": {},
       "gridPos": {
-        "h": 7,
+        "h": 15,
         "w": 12,
         "x": 0,
         "y": 0
@@ -81,7 +81,7 @@
           "dimensions": {
             "InstanceId": "$instanceid"
           },
-          "expr": "aws_ec2_cpuutilization_average{region=~\"$region\",dimension_InstanceId=\"$instanceid\"}",
+          "expr": "aws_ec2_cpuutilization_average{region=~\"$region\", dimension_InstanceId=~\"$instanceid\"}",
           "functions": [],
           "group": {
             "filter": ""
@@ -92,7 +92,7 @@
           "item": {
             "filter": ""
           },
-          "legendFormat": "CPU utilization {{region}} {{dimension_instance_id}}",
+          "legendFormat": "",
           "metricName": "CPUUtilization",
           "mode": 0,
           "namespace": "AWS/EC2",
@@ -165,7 +165,7 @@
       "fillGradient": 0,
       "grid": {},
       "gridPos": {
-        "h": 6,
+        "h": 7,
         "w": 6,
         "x": 12,
         "y": 0
@@ -210,7 +210,7 @@
           "dimensions": {
             "InstanceId": "$instanceid"
           },
-          "expr": "aws_ec2_disk_read_ops_average{region=~\"$region\",dimension_InstanceId=\"$instanceid\"}",
+          "expr": "aws_ec2_disk_read_ops_average{region=~\"$region\",dimension_InstanceId=~\"$instanceid\"}",
           "functions": [],
           "group": {
             "filter": ""
@@ -324,7 +324,7 @@
       "fillGradient": 0,
       "grid": {},
       "gridPos": {
-        "h": 6,
+        "h": 7,
         "w": 6,
         "x": 18,
         "y": 0
@@ -369,7 +369,7 @@
           "dimensions": {
             "InstanceId": "$instanceid"
           },
-          "expr": "aws_ec2_disk_write_bytes_average{region=\"$region\",dimension_InstanceId=\"$instanceid\"}",
+          "expr": "aws_ec2_disk_write_bytes_average{region=~\"$region\",dimension_InstanceId=~\"$instanceid\"}",
           "functions": [],
           "group": {
             "filter": ""
@@ -483,10 +483,10 @@
       "fillGradient": 0,
       "grid": {},
       "gridPos": {
-        "h": 6,
+        "h": 8,
         "w": 6,
         "x": 12,
-        "y": 6
+        "y": 7
       },
       "hiddenSeries": false,
       "id": 11,
@@ -642,10 +642,10 @@
       "fillGradient": 0,
       "grid": {},
       "gridPos": {
-        "h": 6,
+        "h": 8,
         "w": 6,
         "x": 18,
-        "y": 6
+        "y": 7
       },
       "hiddenSeries": false,
       "id": 12,
@@ -797,7 +797,7 @@
         "h": 3,
         "w": 24,
         "x": 0,
-        "y": 12
+        "y": 15
       },
       "id": 2,
       "isNew": true,
@@ -821,15 +821,15 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "us-east-1",
-          "value": "us-east-1"
+          "text": "All",
+          "value": "$__all"
         },
         "datasource": null,
         "definition": "label_values(aws_ec2_cpuutilization_average, region)",
         "description": null,
         "error": null,
         "hide": 0,
-        "includeAll": false,
+        "includeAll": true,
         "label": "region",
         "multi": false,
         "name": "region",
@@ -852,15 +852,15 @@
         "allValue": null,
         "current": {
           "selected": false,
-          "text": "i-0b9192bcedddf3b39",
-          "value": "i-0b9192bcedddf3b39"
+          "text": "All",
+          "value": "$__all"
         },
         "datasource": null,
         "definition": "label_values(aws_ec2_cpuutilization_average, dimension_InstanceId)",
         "description": null,
         "error": null,
         "hide": 0,
-        "includeAll": false,
+        "includeAll": true,
         "label": "instanceid",
         "multi": false,
         "name": "instanceid",
@@ -882,7 +882,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-30m",
     "to": "now"
   },
   "timepicker": {
@@ -911,7 +911,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "AWS EC2",
+  "title": "AWS EC2 through YACE",
   "uid": "aws-ec2",
-  "version": 24
+  "version": 33
 }
