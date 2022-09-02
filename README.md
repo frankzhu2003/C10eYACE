@@ -9,10 +9,10 @@
 - Run YACE: yace.sh
 - Teminal output
 
-'''bash
+```bash
 {"level":"info","msg":"Parse config..","time":"2022-09-01T23:25:00Z"}
 {"level":"info","msg":"Startup completed","time":"2022-09-01T23:25:00Z"}
-'''
+```
 
 ## Setup C10e Collector
 
