@@ -54,3 +54,5 @@
 ```
 
 ## Setup C10e Dashboard
+
+- Create the dashboard: c10eDashboard.json
