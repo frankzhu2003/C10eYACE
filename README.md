@@ -2,7 +2,7 @@
 
 ## Setup AWS
 
-- Create AWS IAM User: yace-iam
+- Create AWS IAM User: yace-iam.json
 - Capture the AWS credential: cw-cred
 
 ## Setup YACE
