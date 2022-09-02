@@ -1,0 +1,85 @@
+discovery:
+  exportTagsOnMetrics:
+    ec2:
+    - app_infrastructure
+    - cost_center
+    - env
+    - Name
+    - metrics_ingestion_pipeline
+    - service
+  jobs:
+  - metrics:
+    - length: 600
+      name: CPUUtilization
+      period: 600
+      statistics:
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: DiskReadOps
+      period: 600
+      statistics:
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: DiskWriteOps
+      period: 600
+      statistics:
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: DiskReadBytes
+      period: 600
+      statistics:
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: DiskWriteBytes
+      period: 600
+      statistics:
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: MetadataNoToken
+      period: 600
+      statistics:
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: NetworkIn
+      period: 600
+      statistics:
+      - Sum
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: NetworkOut
+      period: 600
+      statistics:
+      - Sum
+      - Minimum
+      - Average
+      - Maximum
+    - length: 600
+      name: NetworkPacketsIn
+      period: 600
+      statistics:
+      - Sum
+      - Average
+    - length: 600
+      name: NetworkPacketsOut
+      period: 600
+      statistics:
+      - Sum
+      - Average
+    regions:
+    - us-east-1
+    enableMetricData: true
+    type: ec2
