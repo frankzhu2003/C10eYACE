@@ -16,4 +16,7 @@
 
 ## Setup C10e Collector
 
+- Install C10e Collector
+- Run C10e Collector: c10ecollector.sh
+
 ## Setup C10e Dashboard
