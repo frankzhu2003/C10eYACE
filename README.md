@@ -4,8 +4,8 @@
 
 #### Operating Account
 
-- Create AWS IAM User: yace-iam.json
-  - For ExternalId use case: attach IAM inline policy for the IAM User: iam-inlinepolicy.json
+- Create AWS IAM User with Policy: yace-iam.json
+  - For ExternalId use case: attach additional IAM inline policy for the IAM User: iam-inlinepolicy.json
 - Capture the AWS credential: cw-cred
 
 #### Targeting Account
