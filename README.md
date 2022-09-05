@@ -3,12 +3,13 @@
 ## Setup AWS
 
 - Create AWS IAM User: yace-iam.json
-  - Create IAM inline policy for the IAM User: iam-inlinepolicy.json
+  - For ExternalId use case: attach IAM inline policy for the IAM User: iam-inlinepolicy.json
 - Capture the AWS credential: cw-cred
 
 ## Setup YACE
 
 - Run YACE: yace.sh
+  - For ExternalID use case: Use the yace-externalid.yml
 
 ```bash
 {"level":"info","msg":"Parse config..","time":"2022-09-01T23:25:00Z"}
