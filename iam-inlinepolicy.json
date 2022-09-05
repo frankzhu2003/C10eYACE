@@ -3,6 +3,6 @@
     "Statement": {
         "Effect": "Allow",
         "Action": "sts:AssumeRole",
-        "Resource": "arn:aws:iam::TARGET AWS ACCOUNT NUMBER:role/c10esap2022"
+        "Resource": "arn:aws:iam::{TARGET AWS ACCOUNT NUMBER}:role/c10esap2022"
     }
 }
