@@ -89,4 +89,4 @@ discovery:
     type: ec2
     roles:
     - externalId: c10esap2022
-      roleArn: arn:aws:iam::TARGET AWS ACCOUNT NUMBER:role/c10esap2022
+      roleArn: arn:aws:iam::{TARGET AWS ACCOUNT NUMBER}:role/c10esap2022
