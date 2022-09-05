@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nohup stress-ng -c 1 -t 0 &
+nohup stress-ng -c 1 -t 1y &
