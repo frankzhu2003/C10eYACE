@@ -18,6 +18,8 @@
   - For ExternalID use case: Use the yace-externalid.yml
 
 ```bash
+docker logs [pod]
+
 {"level":"info","msg":"Parse config..","time":"2022-09-01T23:25:00Z"}
 {"level":"info","msg":"Startup completed","time":"2022-09-01T23:25:00Z"}
 ```
